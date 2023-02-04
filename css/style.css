@@ -1,0 +1,149 @@
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: var(--Light-Gray);
+}
+
+.container {
+  width: 40%;
+  margin: 100px auto;
+  background: white;
+  border-radius: 10px;
+}
+
+.description {
+  padding: 40px;
+  font-size: 12px;
+}
+
+header {
+  font-size: 11px;
+  color: var(--Cyan);
+}
+
+.description > h2 {
+  color: var(--Bright-Yellow);
+  font-weight: bold;
+}
+
+.description > p {
+  color: var(--Grayish-Blue);
+  max-height: 50px;
+  max-width: 500px;
+  font-size: 14px;
+}
+
+section {
+  display: flex;
+}
+.left-box {
+  background: var(--Cyan);
+  width: 50%;
+  color: white;
+  padding: 40px;
+  border-radius: 0 0 0 10px;
+}
+
+.left-box > p > .cost {
+  font-size: 25px;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.left-box > h3 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.left-box > p > .duration {
+  color: var(--Light-Gray);
+  opacity: 0.7;
+}
+
+.left-box > .access {
+  color: var(--Light-Gray);
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.left-box > .sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Bright-Yellow);
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-box {
+  width: 50%;
+  color: white;
+  background: var(--Cyan);
+  opacity: 0.85;
+  padding: 30px;
+  border-radius: 0 0 10px 0;
+}
+
+.right-box > h3 {
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.right-box > .about {
+  color: var(--Light-Gray);
+  font-size: 13px;
+  width: 180px;
+  line-height: 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For mobile */
+
+@media only screen and (max-width: 594px) {
+  .container {
+    padding-right: 30px;
+    width: 65%;
+    border-radius: 5px;
+  }
+
+  header {
+    padding-bottom: 5px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  .description > p {
+    width: 270px;
+    padding-bottom: 50px;
+    line-height: 30px;
+  }
+
+  .left-box {
+    width: 84%;
+    border-radius: 0px;
+  }
+
+  .right-box {
+    width: 90.5%;
+    border-radius: 0 0 5px 5px;
+  }
+}
